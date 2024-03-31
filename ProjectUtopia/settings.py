@@ -125,7 +125,7 @@ STATICFILES_DIRS = [BASE_DIR / "static",]
 
 # For deployment:
 # Uncomment and specify the directory where static files will be collected to
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
