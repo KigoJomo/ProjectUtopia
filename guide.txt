@@ -1,0 +1,30 @@
+C:\Users\Nova\Desktop\GitHub\WebApps\ProjectUtopia\ProjectUtopia\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\Nova\Desktop\GitHub\WebApps\Lib\site-packages\django\utils\autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\Nova\Desktop\GitHub\WebApps\Lib\site-packages\django\core\management\commands\runserver.py", line 124, in inner_run
+    self.check(display_num_errors=True)
+  File "C:\Users\Nova\Desktop\GitHub\WebApps\Lib\site-packages\django\core\management\base.py", line 488, in check
+    raise SystemCheckError(msg)
+django.core.management.base.SystemCheckError: SystemCheckError: System check identified some issues:
+
+ERRORS:
+?: (staticfiles.E002) The STATICFILES_DIRS setting should not contain the STATIC_ROOT setting.
+
+System check identified 1 issue (0 silenced).
+
+
+settings.py
+STATIC_URL = 'static/'
+STATICFILES_DIRS = [BASE_DIR / "static"]
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+when I comment the static_root line, the css works, but when i uncomment it and comment the STATICFILES_DIRS, the css does not work.
