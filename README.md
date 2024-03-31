@@ -17,19 +17,22 @@ To get started with Utopia, follow these steps:
 
 1. *Clone the Repository:*
 
-   bash
+   ``` bash
    git clone https://github.com/KigoJomo/ProjectUtopia.git
+   ```
 
 2. *Install Dependencies:*
 
-   bash
+   ``` bash
    cd utopia
    npm install
+   ```
 
 3. *Run the Application:*
 
-   bash
+   ``` bash
    npm start
+   ```
 
 4. *Visit the Application:*
    Open your web browser and navigate to [http://localhost:3000](http://localhost:3000) to access Utopia.
